@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Tasks} from './Tasks';
 
 
 // Hi Guys!
@@ -8,13 +9,12 @@ import './App.css';
 // -Don't forget to assign types to our data.
 
 
-
 function App() {
     const data1 = {
-        title: "What to do",
+        title: 'What to do',
         tasks: [
-            {taskId: 1, title: "HTML&CSS2", isDone: true},
-            {taskId: 2, title: "JS2", isDone: true}
+            {taskId: 1, title: 'HTML&CSS2', isDone: true},
+            {taskId: 2, title: 'JS2', isDone: true}
         ],
         students: [
             'Jago Wormald1',
@@ -64,11 +64,11 @@ function App() {
             'Ralphie Hebert',
         ]
     }
-    const data2 =   {
-        title: "What to learn",
+    const data2 = {
+        title: 'What to learn',
         tasks: [
-            {taskId: 1, title: "HTML&CSS", isDone: true},
-            {taskId: 2, title: "JS", isDone: true}
+            {taskId: 1, title: 'HTML&CSS', isDone: true},
+            {taskId: 2, title: 'JS', isDone: true}
         ],
         students: [
             'Rick Kane',
@@ -126,37 +126,13 @@ function App() {
 
     return (
         <div className="App">
-
+            <Tasks data={data1}/>
+            <Tasks data={data2}/>
         </div>
     );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //--------------------------------------------------------------
